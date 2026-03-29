@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechData | Central de Dashboards</title>
+    <style>
+        /* Estilo Geral - Visual Tecnológico */
+        body {
+            background-color: #0b0e14; /* Azul muito escuro */
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #00d4ff;
+            padding-bottom: 10px;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+        }
+
+        h1 {
+            color: #00d4ff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        /* Contentor dos Dashboards */
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Cartão de cada Dashboard */
+        .card {
+            background: #1a1f29;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+            border-color: #00d4ff;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #00d4ff;
+            font-size: 1.2rem;
+        }
+
+        /* Onde o Power BI aparece */
+        .bi-frame {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+            background: #000;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Data Intelligence Hub</h1>
+        <p>Monitorização em Tempo Real</p>
+    </header>
+
+    <div class="dashboard-container">
+        
+        <div class="card">
+            <h3>📈 Performance de Vendas</h3>
+            <iframe class="bi-frame" src="https://app.powerbi.com/view?r=eyJrIjoiZTAwYzY5MjYtM2VmZS00YjE0LThhMDQtODRmZDBhZTUzYzcwIiwidCI6ImY1MWQwYTk3LTgyMTUtNDAwOS1iOGIxLWJlODQwNmZkNDBkYiJ9"></iframe>
+            <p>Análise mensal de KPIs e faturamento.</p>
+        </div>
+
+        <div class="card">
+            <h3>👥 Logitísca</h3>
+            <iframe class="bi-frame" src="https://app.powerbi.com/view?r=eyJrIjoiMDkyYjRiYmMtNDkzYS00ZjFiLWI5NDMtNWJjOGQ0NGE2NTJhIiwidCI6ImY1MWQwYTk3LTgyMTUtNDAwOS1iOGIxLWJlODQwNmZkNDBkYiJ9"></iframe>
+            <p>Distribuição Nacional.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 - Sistema de Análise Avançada
+    </footer>
+
+</body>
+</html>
