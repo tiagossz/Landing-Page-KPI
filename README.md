@@ -1,0 +1,3 @@
+Este projeto consiste na criação de uma landing page para um Data Intelligence Hub, desenvolvida com foco na visualização clara e estratégica de KPIs (Key Performance Indicators). A interface apresenta dashboards interativos integrados ao Microsoft Power BI, permitindo o monitoramento em tempo real de métricas essenciais de negócio, como performance de vendas, fluxo de caixa e indicadores logísticos.
+
+A estrutura foi pensada para oferecer uma experiência intuitiva e moderna, destacando insights relevantes por meio de gráficos e visualizações dinâmicas. O objetivo principal é centralizar dados críticos em um único ambiente, facilitando a tomada de decisão orientada por dados.
